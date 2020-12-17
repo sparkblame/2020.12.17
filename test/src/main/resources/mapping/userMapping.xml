@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.IUserDAO">
+
+	<select id="getAll" resultType="vo.Product">
+		select * from t_product
+	</select>
+	<select id="getTemperAll" resultType="vo.Temper">
+		select * from t_temperature
+	</select>
+	<select id="getBrowser" resultType="vo.Browser">
+		select * from t_browse
+	</select>
+	<select id="getName" resultType="String">
+		select categories from t_browse
+	</select>
+</mapper>
